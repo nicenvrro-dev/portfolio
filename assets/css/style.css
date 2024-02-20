@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+:root {
+  --dark-gray: #0e2431;
+  --blue: #011aff;
+  --navy: #002057;
+  --orange: #ff7b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar start */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.7rem 10%;
+}
+
+nav .navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: var(--dark-gray);
+  font-weight: 800;
+}
+
+nav .nav-link {
+  font-size: 1.57rem;
+  font-weight: 600;
+  margin-left: 2.5rem;
+  color: var(--dark-gray);
+  transition: all 0.2s linear;
+}
+
+nav .nav-link:hover {
+  color: var(--blue);
+  border-bottom: 0.2rem solid #011aff;
+  padding: 0.5rem 0;
+}
+/* navbar end */
+
+/* hero section start */
+.hero {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7rem 10%;
+}
+
+.hero #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero .content {
+  z-index: 1;
+}
+
+.hero .img-content {
+  z-index: 1;
+}
+
+.content,
+.img-content {
+  width: 50%;
+}
+
+.content h1 {
+  font-size: 5rem;
+  color: var(--navy);
+}
+
+.content h1 span {
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.content p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.content p span {
+  color: rgb(148, 8, 8);
+}
+
+.content button {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  border: none;
+}
+
+.content button:hover {
+  background: #1a047e;
+  cursor: pointer;
+}
+
+.img-content img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.socials {
+  margin-top: 3rem;
+}
+
+.socials .social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  display: inline-block;
+  font-size: 2rem;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  color: #00d9ff;
+  background: #09011b;
+  border-radius: 100%;
+}
+
+.img-content img {
+  border-radius: 100%;
+}
+/* hero section ends */
+
+/* skills section start  */
+.skills {
+  min-height: 50vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.skills h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.skills .heading span {
+  color: rgb(255, 230, 0);
+}
+.skills .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+/* skills section end  */
+
+.skills .container .row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+.skills .container .bar {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+}
+.skills .container .bar:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.skills .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills .container .bar .info i {
+  font-size: 4rem;
+}
+.skills .container .bar .info span {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-left: 0.5rem;
+}
+/* skills section ends  */
+
+/* education section start */
+.education {
+  background: #e5ecfb;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.education .heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.education .qoute {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
+}
+.education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+.education .box-container .box .content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+/* education section ends */
+
+/* work section starts */
+.work {
+  /* background: #010124; */
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000031, #00002c);
+  padding-top: 2rem;
+}
+.work h2 {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.work .heading span {
+  color: rgb(255, 230, 0);
+}
+.work .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.work .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+}
+.work .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.work .box-container .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+.work .box-container .box .content .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #ffd900;
+}
+.work .box-container .box .content .tag h3 {
+  font-size: 2rem;
+}
+.work .box-container .box:hover .content {
+  top: 25%;
+}
+.work .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work .desc p {
+  font-size: 1.5rem;
+}
+.work .desc .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.work .desc .btns .btn {
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgb(12, 12, 12);
+  margin-right: 2rem;
+}
+.work .desc .btns .btn:hover {
+  background: #310ae0f5;
+}
+.work .viewall {
+  display: flex;
+  justify-content: center;
+}
+.work .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.work .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.work .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.work .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.work .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* work section ends */
+
+/* contact section starts */
+.contact {
+  background: #e5ecfb;
+  min-height: 80vh;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.contact .container {
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+  width: 100%;
+}
+.contact .content .image-box {
+  max-width: 60%;
+  margin-left: 4rem;
+}
+.contact .content .image-box img {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+.contact .content form {
+  width: 45%;
+  margin-right: 3.5rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.field input::placeholder,
+.message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+.field input:focus,
+.message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+  color: rgb(115, 3, 167);
+}
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .message i {
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+form .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+.button-area button:hover {
+  background: #421cecf5;
+}
+.button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.button-area button i {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i {
+  left: 8px;
+}
+
+/* contact section ends */
+
+/* footer section starts */
+.footer {
+  min-height: auto;
+  padding: 1.7rem 10%;
+  background: rgb(0, 1, 43);
+}
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 0.7rem 0;
+  text-transform: none;
+}
+.footer .box-container .box p i {
+  padding-right: 1rem;
+  color: #ffae00;
+}
+.footer .box-container .box a {
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  padding: 0.3rem 0;
+  display: block;
+}
+.footer .box-container .box a:hover {
+  color: #ffae00;
+}
+.footer .box-container .box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.footer .box-container .box .share a {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transition: 0.2s;
+  background: rgb(230, 230, 230);
+  color: #02094b;
+  border: none;
+}
+.footer .box-container .box .share a:hover {
+  background: transparent;
+  transform: scale(0.98);
+  border: 0.1rem solid rgb(180, 178, 178);
+  color: #ffae00;
+}
+.footer .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+.footer .credit a {
+  color: #ffae00;
+}
+.footer .fa {
+  color: #e90606;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+  animation: pound 0.35s infinite alternate;
+}
+
+/* footer section ends  */
